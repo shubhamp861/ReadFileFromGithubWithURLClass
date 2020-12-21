@@ -4,6 +4,7 @@ public class DemoApplication {
 		SpringApplication.run(DemoApplication.class, args);
 
 		String stringUrl = "http://URL:PORT/rest/api/1.0/projects/TESTPRO/repos";
+		//or else use normal URL.
 		String userpass = "USERNAME" + ":" + "PASSWORD";
 		String basicAuth = "Basic " + new String(new Base64().encode(userpass.getBytes()));
 
